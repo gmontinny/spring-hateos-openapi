@@ -1,30 +1,18 @@
-# springdoc-openapi demo with spring-boot-2 hateoas
+# springdoc-openapi hateoas
 
-## Building application
 
-### Pre-requisites
-- JDK 8+
-- maven 3
-- docker CLI
 
-### Option 1: Building Executable JAR
-To create an `executable jar`, simply run:
-
+### Opção 1: Construindo JAR Executável
 ```sh
  mvn clean package
 ```
 
-### Option 2: Building a non-native OCI Images
-To create a non-native OCI docker image, simply run:
-
+### Opção 2: Criando imagens OCI não nativas
 ```sh
 mvn clean spring-boot:build-image
 ```
 
-## Running the native application
-
-To run the demo using docker, invoke the following:
-
+## Executando o aplicativo nativo
 ```sh
 docker pull springdocdemos/springdoc-openapi-hateoas-service:latest
 docker run --rm -p 8080:8080 springdocdemos/springdoc-openapi-hateoas-service:latest
